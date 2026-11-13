@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexa Bank: conta digital gratuita, cartões, Pix, investimentos e cashback em um só lugar.">
+  <title>Nexa Bank | O banco que simplifica sua vida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/beneficios.css">
+  <link rel="stylesheet" href="css/cartoes.css">
+  <link rel="stylesheet" href="css/investimentos.css">
+  <link rel="stylesheet" href="css/depoimentos.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon"><i class="fa-solid fa-bolt"></i></span>Nexa
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#para-voce" class="nav__link">Para você</a></li>
+          <li><a href="pages/cartoes.html" class="nav__link">Cartões</a></li>
+          <li><a href="pages/investimentos.html" class="nav__link">Investimentos</a></li>
+          <li><a href="pages/sobre.html" class="nav__link">Sobre nós</a></li>
+          <li><a href="pages/contato.html" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="pages/contato.html" class="btn btn-primary">Abra sua conta</a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="tag">Conta digital 100% gratuita</span>
+          <h1>O banco que <span>simplifica</span> sua vida.</h1>
+          <p class="hero__text">Tenha controle do seu dinheiro, faça pagamentos, invista e aproveite benefícios em um só lugar.</p>
+          <div class="hero__buttons">
+            <a href="pages/contato.html" class="btn btn-primary">Abra sua conta grátis <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#para-voce" class="btn btn-outline">Conheça nossos benefícios</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__top"><span>Olá, Maria</span><i class="fa-regular fa-bell"></i></div>
+              <p class="phone__label">Saldo disponível</p>
+              <p class="phone__balance">R$ 12.480,50</p>
+              <div class="phone__card"><span>Cartão Nexa Black</span><strong>•••• 4821</strong></div>
+              <div class="phone__actions">
+                <button><i class="fa-solid fa-qrcode"></i>Pix</button>
+                <button><i class="fa-solid fa-credit-card"></i>Cartões</button>
+                <button><i class="fa-solid fa-chart-line"></i>Invest.</button>
+                <button><i class="fa-solid fa-receipt"></i>Extrato</button>
+              </div>
+              <p class="phone__label">Últimas movimentações</p>
+              <ul class="phone__list">
+                <li><span>Supermercado</span><b>- R$ 245,90</b></li>
+                <li><span>Pix recebido</span><b class="pos">+ R$ 1.200,00</b></li>
+                <li><span>Rendimento CDB</span><b class="pos">+ R$ 38,42</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="float-badge float-badge--1"><i class="fa-solid fa-shield-halved"></i>Transação aprovada</div>
+          <div class="float-badge float-badge--2"><i class="fa-solid fa-gift"></i>Cashback de R$ 18,00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="para-voce">
+      <div class="container">
+        <span class="tag reveal">Para você</span>
+        <h2 class="section-title reveal">Tudo o que você precisa, sem complicação</h2>
+        <p class="section-subtitle reveal">Uma conta completa para o seu dia a dia, sem taxas escondidas.</p>
+        <div class="beneficios__grid">
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Conta digital gratuita</h3>
+            <p>Abra sua conta em minutos, sem tarifas de manutenção e sem burocracia.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-credit-card"></i></div>
+            <h3>Cartão de crédito</h3>
+            <p>Limite flexível, faturas claras e controle total das suas compras.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-qrcode"></i></div>
+            <h3>Pix instantâneo</h3>
+            <p>Transfira e receba dinheiro em segundos, a qualquer hora do dia.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Investimentos</h3>
+            <p>CDB, fundos e Tesouro Direto com aplicação a partir de poucos reais.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-percent"></i></div>
+            <h3>Cashback</h3>
+            <p>Receba parte do valor de volta em compras em milhares de lojas parceiras.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Segurança digital</h3>
+            <p>Proteção em todas as transações, com alertas em tempo real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICATIVO -->
+    <section class="bg-cinza" id="app">
+      <div class="container app__inner">
+        <div class="app__text reveal">
+          <span class="tag">Aplicativo</span>
+          <h2>Seu banco inteiro no bolso.</h2>
+          <p>Acompanhe saldo, extrato e investimentos e faça tudo com poucos toques.</p>
+          <ul class="app__features">
+            <li><i class="fa-solid fa-sack-dollar"></i>Saldo disponível em tempo real</li>
+            <li><i class="fa-solid fa-receipt"></i>Extrato completo e organizado</li>
+            <li><i class="fa-solid fa-qrcode"></i>Pix em poucos segundos</li>
+            <li><i class="fa-solid fa-credit-card"></i>Gerencie seus cartões</li>
+            <li><i class="fa-solid fa-chart-pie"></i>Acompanhe seus investimentos</li>
+          </ul>
+        </div>
+        <div class="app__visual reveal">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__top"><span>Início</span><i class="fa-solid fa-gear"></i></div>
+              <p class="phone__label">Saldo disponível</p>
+              <p class="phone__balance">R$ 12.480,50</p>
+              <div class="app-grid">
+                <div><i class="fa-solid fa-qrcode"></i>Pix</div>
+                <div><i class="fa-solid fa-receipt"></i>Extrato</div>
+                <div><i class="fa-solid fa-credit-card"></i>Cartões</div>
+                <div><i class="fa-solid fa-chart-line"></i>Investimentos</div>
+              </div>
+              <p class="phone__label">Extrato</p>
+              <ul class="phone__list">
+                <li><span>Farmácia</span><b>- R$ 89,30</b></li>
+                <li><span>Salário</span><b class="pos">+ R$ 5.200,00</b></li>
+                <li><span>Pix enviado</span><b>- R$ 150,00</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTÕES -->
+    <section id="cartoes">
+      <div class="container">
+        <span class="tag reveal">Cartões</span>
+        <h2 class="section-title reveal">Escolha o cartão ideal para você</h2>
+        <p class="section-subtitle reveal">Crédito, débito e virtual, todos com gestão simples pelo aplicativo.</p>
+        <div class="cartoes__grid">
+          <div class="cartoes__item reveal">
+            <div class="credit-card">
+              <span class="credit-card__brand">NEXA</span>
+              <div class="credit-card__chip"></div>
+              <p class="credit-card__number">4821 •••• •••• 9032</p>
+              <div class="credit-card__footer"><span>Maria Silva</span><span>12/29</span></div>
+            </div>
+            <h3>Cartão de crédito</h3>
+            <p>Limite flexível e benefícios exclusivos para o seu consumo.</p>
+          </div>
+          <div class="cartoes__item reveal">
+            <div class="credit-card credit-card--laranja">
+              <span class="credit-card__brand">NEXA</span>
+              <div class="credit-card__chip"></div>
+              <p class="credit-card__number">5210 •••• •••• 7741</p>
+              <div class="credit-card__footer"><span>Maria Silva</span><span>08/28</span></div>
+            </div>
+            <h3>Cartão de débito</h3>
+            <p>Use o saldo da sua conta com segurança em qualquer lugar.</p>
+          </div>
+          <div class="cartoes__item reveal">
+            <div class="credit-card credit-card--claro">
+              <span class="credit-card__brand">NEXA</span>
+              <div class="credit-card__chip"></div>
+              <p class="credit-card__number">6011 •••• •••• 2288</p>
+              <div class="credit-card__footer"><span>Virtual</span><span>Gerar novo</span></div>
+            </div>
+            <h3>Cartão virtual</h3>
+            <p>Compre online com número temporário e mais proteção.</p>
+          </div>
+        </div>
+        <div class="section-cta reveal">
+          <a href="pages/cartoes.html" class="btn btn-outline">Ver todos os cartões <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTIMENTOS -->
+    <section class="bg-cinza" id="investimentos">
+      <div class="container">
+        <span class="tag reveal">Investimentos</span>
+        <h2 class="section-title reveal">Seu dinheiro trabalhando por você.</h2>
+        <p class="section-subtitle reveal">Comece com pouco e acompanhe seus rendimentos no próprio app.</p>
+        <div class="investimentos__grid">
+          <article class="card invest-card reveal">
+            <span class="invest-card__rate">110% <small>do CDI</small></span>
+            <h3>CDB</h3>
+            <p>Certificado de depósito bancário com liquidez diária.</p>
+            <ul><li>Aplicação a partir de R$ 50</li><li>Coberto pelo FGC</li></ul>
+          </article>
+          <article class="card invest-card reveal">
+            <span class="invest-card__rate">Pós-fixado</span>
+            <h3>Renda fixa</h3>
+            <p>Rentabilidade previsível atrelada a índices de referência.</p>
+            <ul><li>Diversas opções de prazo</li><li>Acompanhamento simples</li></ul>
+          </article>
+          <article class="card invest-card reveal">
+            <span class="invest-card__rate">Diversificado</span>
+            <h3>Fundos de investimento</h3>
+            <p>Carteiras gerenciadas por especialistas para diferentes perfis.</p>
+            <ul><li>Perfis conservador a arrojado</li><li>Sem taxa de entrada</li></ul>
+          </article>
+          <article class="card invest-card reveal">
+            <span class="invest-card__rate">Tesouro</span>
+            <h3>Tesouro Direto</h3>
+            <p>Títulos públicos com segurança do governo federal.</p>
+            <ul><li>Investimento a partir de R$ 30</li><li>Emitidos pelo Tesouro Nacional</li></ul>
+          </article>
+        </div>
+        <div class="section-cta reveal">
+          <a href="pages/investimentos.html" class="btn btn-outline">Explorar investimentos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGURANÇA -->
+    <section id="seguranca">
+      <div class="container">
+        <span class="tag reveal">Segurança</span>
+        <h2 class="section-title reveal">Sua segurança em primeiro lugar</h2>
+        <p class="section-subtitle reveal">Tecnologia e monitoramento constante para proteger cada transação.</p>
+        <div class="seguranca__grid">
+          <div class="seguranca__item reveal">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Proteção de dados</h3>
+            <p>Suas informações são criptografadas e tratadas com total sigilo.</p>
+          </div>
+          <div class="seguranca__item reveal">
+            <i class="fa-solid fa-fingerprint"></i>
+            <h3>Autenticação biométrica</h3>
+            <p>Acesso rápido e seguro com impressão digital ou reconhecimento facial.</p>
+          </div>
+          <div class="seguranca__item reveal">
+            <i class="fa-solid fa-eye"></i>
+            <h3>Monitoramento de transações</h3>
+            <p>Analisamos cada operação em tempo real para identificar atividades suspeitas.</p>
+          </div>
+          <div class="seguranca__item reveal">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Segurança digital</h3>
+            <p>Alertas instantâneos e bloqueio do cartão em um toque pelo aplicativo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="bg-cinza" id="depoimentos">
+      <div class="container">
+        <span class="tag reveal">Depoimentos</span>
+        <h2 class="section-title reveal">Quem usa, recomenda</h2>
+        <p class="section-subtitle reveal">Avaliações fictícias, apenas para fins de demonstração.</p>
+        <div class="depoimentos__grid">
+          <article class="card depo-card reveal">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"Abri a conta pelo celular em poucos minutos e nunca mais paguei tarifa. O Pix é instantâneo."</p>
+            <div class="depo-card__author"><div class="depo-card__avatar">MS</div><div><strong>Mariana Souza</strong><span>Designer, São Paulo</span></div></div>
+          </article>
+          <article class="card depo-card reveal">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"O cashback me ajuda a economizar todo mês, e o app é muito intuitivo para acompanhar tudo."</p>
+            <div class="depo-card__author"><div class="depo-card__avatar">RL</div><div><strong>Rafael Lima</strong><span>Engenheiro, Belo Horizonte</span></div></div>
+          </article>
+          <article class="card depo-card reveal">
+            <div class="depo-card__stars">★★★★☆</div>
+            <p class="depo-card__text">"Comecei investindo pouco no Tesouro Direto e hoje acompanho todos os meus investimentos num só lugar."</p>
+            <div class="depo-card__author"><div class="depo-card__avatar">JC</div><div><strong>Juliana Costa</strong><span>Professora, Recife</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <span class="tag reveal">Dúvidas</span>
+        <h2 class="section-title reveal">Perguntas frequentes</h2>
+        <p class="section-subtitle reveal">As respostas para as dúvidas mais comuns sobre a Nexa.</p>
+        <div class="faq__list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">Abrir conta na Nexa é gratuito? <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Sim. A conta digital não possui tarifa de manutenção e a abertura é feita totalmente pelo aplicativo.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">Como funciona o cashback? <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Parte do valor das compras em lojas parceiras é devolvida na sua conta. Os percentuais variam conforme o parceiro.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">Qual é o valor mínimo para investir? <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Os valores variam por produto. Em geral, o investimento inicial começa a partir de R$ 30 no Tesouro Direto e R$ 50 em CDBs.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">Meu dinheiro está protegido? <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Depósitos em conta e CDBs elegíveis contam com a cobertura do FGC, conforme os limites estabelecidos pela regulamentação vigente.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">Posso bloquear o cartão pelo aplicativo? <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Sim. Em um toque você bloqueia ou desbloqueia seu cartão, físico ou virtual, a qualquer momento.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Pronto para simplificar sua vida?</h2>
+          <p>Abra sua conta gratuita em minutos e tenha controle total do seu dinheiro.</p>
+          <a href="pages/contato.html" class="btn btn-primary">Abra sua conta grátis <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__icon"><i class="fa-solid fa-bolt"></i></span>Nexa</a>
+          <p class="footer__about">Banco digital para simplificar a sua vida financeira, com conta gratuita, cartões, Pix e investimentos.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Produtos</h4>
+          <ul class="footer__links">
+            <li><a href="pages/cartoes.html">Cartões</a></li>
+            <li><a href="pages/investimentos.html">Investimentos</a></li>
+            <li><a href="#para-voce">Conta digital</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul class="footer__links">
+            <li><a href="pages/sobre.html">Sobre nós</a></li>
+            <li><a href="pages/contato.html">Contato</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul class="footer__links">
+            <li><a href="#">0800 000 0000</a></li>
+            <li><a href="#">contato@nexabank.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="ano"></span> Nexa Bank. Projeto demonstrativo.</p>
+        <nav>
+          <a href="#">Termos de uso</a>
+          <a href="#">Política de privacidade</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

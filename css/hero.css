@@ -1,0 +1,138 @@
+/* =========================================
+   HERO.CSS - Hero, mockup de smartphone e page-hero
+   ========================================= */
+.hero {
+  padding: 80px 0 96px;
+  background: linear-gradient(160deg, #FFFFFF 40%, #FFF3EB 100%);
+  overflow: hidden;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 48px;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+.hero h1 span { color: var(--laranja); }
+.hero__text {
+  font-size: 1.15rem;
+  color: var(--cinza);
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.hero__buttons { display: flex; flex-wrap: wrap; gap: 16px; }
+
+.hero__visual { position: relative; display: grid; place-items: center; }
+
+/* Smartphone */
+.phone {
+  width: 290px;
+  height: 590px;
+  border-radius: 44px;
+  background: var(--preto);
+  padding: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  animation: float 6s ease-in-out infinite;
+}
+.phone__screen {
+  background: var(--cinza-claro);
+  border-radius: 34px;
+  height: 100%;
+  padding: 22px 18px;
+  overflow: hidden;
+}
+.phone__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+.phone__top i { color: var(--laranja); }
+.phone__label { font-size: 0.75rem; color: var(--cinza); margin-top: 14px; margin-bottom: 4px; }
+.phone__balance { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.02em; }
+.phone__card {
+  margin: 16px 0;
+  padding: 18px;
+  border-radius: 18px;
+  color: var(--branco);
+  background: linear-gradient(135deg, #FF6B00, #FF9A4D);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+}
+.phone__actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.phone__actions button {
+  background: var(--branco);
+  border: 0;
+  border-radius: 14px;
+  padding: 10px 0;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--preto);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.phone__actions button i { color: var(--laranja); font-size: 1rem; }
+.phone__actions button:hover { transform: translateY(-3px); background: #FFF3EB; }
+.phone__list { margin-top: 8px; }
+.phone__list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 0.85rem;
+}
+.phone__list b { font-weight: 700; }
+.phone__list .pos { color: #1E9E5A; }
+
+/* Badges flutuantes */
+.float-badge {
+  position: absolute;
+  background: var(--branco);
+  padding: 12px 18px;
+  border-radius: 16px;
+  box-shadow: var(--sombra-forte);
+  font-weight: 600;
+  font-size: 0.85rem;
+  animation: float 4s ease-in-out infinite;
+}
+.float-badge i { color: var(--laranja); margin-right: 6px; }
+.float-badge--1 { top: 12%; left: -4%; }
+.float-badge--2 { bottom: 14%; right: -6%; animation-delay: 1.5s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* Page hero (subpáginas) */
+.page-hero {
+  padding: 72px 0 64px;
+  background: linear-gradient(160deg, #FFFFFF 40%, #FFF3EB 100%);
+  text-align: center;
+}
+.page-hero h1 {
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.page-hero h1 span { color: var(--laranja); }
+.page-hero p { color: var(--cinza); max-width: 620px; margin: 0 auto; font-size: 1.1rem; }

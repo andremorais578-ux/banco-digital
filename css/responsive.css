@@ -1,0 +1,86 @@
+/* =========================================
+   RESPONSIVE.CSS - Media queries
+   ========================================= */
+
+/* Notebook / tablet grande */
+@media (max-width: 1100px) {
+  .nav__list { gap: 20px; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Tablet */
+@media (max-width: 960px) {
+  section { padding: 72px 0; }
+
+  .menu-toggle { display: block; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    padding: 24px 20px 32px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+  }
+  .nav.open { display: block; animation: slideDown 0.3s ease; }
+  .nav__list { flex-direction: column; gap: 18px; }
+  .nav__link { font-size: 1.05rem; }
+
+  .hero__inner,
+  .app__inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .hero__text { margin-inline: auto; }
+  .hero__buttons { justify-content: center; }
+  .hero__visual { order: -1; }
+  .float-badge--1 { left: 4%; }
+  .float-badge--2 { right: 4%; }
+  .app__features li { justify-content: center; }
+  .app__features { display: inline-block; text-align: left; }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+  .container { width: min(100% - 28px, var(--container)); }
+  section { padding: 60px 0; }
+  .section-subtitle { margin-bottom: 40px; }
+
+  .header__actions .btn { display: none; }
+  .header__inner { height: 68px; }
+  .nav { top: 68px; }
+
+  .hero { padding: 48px 0 64px; }
+  .hero__buttons { flex-direction: column; width: 100%; }
+  .hero__buttons .btn { justify-content: center; }
+
+  .phone { width: 260px; height: 530px; }
+  .float-badge { font-size: 0.75rem; padding: 10px 14px; }
+
+  .credit-card { max-width: 300px; }
+  .footer__grid { grid-template-columns: 1fr; text-align: left; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; }
+  .page-hero { padding: 52px 0 44px; }
+  .faq-question { padding: 18px 20px; font-size: 0.95rem; }
+  .faq-answer p { padding: 0 20px 18px; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 960px) {
+  .split { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .cta-band { padding: 44px 24px; border-radius: 22px; }
+}

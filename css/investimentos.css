@@ -1,0 +1,46 @@
+/* =========================================
+   INVESTIMENTOS.CSS - Cards de produtos de investimento
+   ========================================= */
+.investimentos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+.invest-card { position: relative; overflow: hidden; }
+.invest-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0;
+  background: linear-gradient(90deg, #FF6B00, #FF9A4D);
+  transition: width 0.4s ease;
+}
+.invest-card:hover::after { width: 100%; }
+.invest-card__rate {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--laranja);
+  margin-bottom: 12px;
+}
+.invest-card__rate small { font-size: 0.85rem; font-weight: 500; color: var(--cinza); }
+.invest-card ul { margin-top: 16px; }
+.invest-card li {
+  font-size: 0.9rem;
+  color: var(--cinza);
+  padding: 6px 0 6px 22px;
+  position: relative;
+}
+.invest-card li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: var(--laranja);
+  font-size: 0.75rem;
+  top: 9px;
+}
+.invest-destaque { margin-top: 56px; }

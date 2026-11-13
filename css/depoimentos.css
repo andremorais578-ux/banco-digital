@@ -1,0 +1,24 @@
+/* =========================================
+   DEPOIMENTOS.CSS - Avaliações de clientes
+   ========================================= */
+.depoimentos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.depo-card { display: flex; flex-direction: column; gap: 20px; }
+.depo-card__stars { color: #FFB800; font-size: 0.9rem; letter-spacing: 2px; }
+.depo-card__text { color: var(--preto); font-size: 0.98rem; flex: 1; }
+.depo-card__author { display: flex; align-items: center; gap: 14px; }
+.depo-card__avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B00, #FF9A4D);
+  color: var(--branco);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.depo-card__author strong { display: block; font-size: 0.95rem; }
+.depo-card__author span { font-size: 0.82rem; color: var(--cinza); }

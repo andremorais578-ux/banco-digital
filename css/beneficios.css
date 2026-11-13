@@ -1,0 +1,82 @@
+/* =========================================
+   BENEFICIOS.CSS - Benefícios, aplicativo e segurança
+   ========================================= */
+.beneficios__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Seção do aplicativo */
+.app__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+.app__text h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.app__text > p { color: var(--cinza); margin-bottom: 28px; }
+.app__features li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  font-weight: 500;
+}
+.app__features i {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #FFF3EB;
+  color: var(--laranja);
+  display: grid;
+  place-items: center;
+}
+.app__visual { display: grid; place-items: center; }
+
+/* Grade de atalhos dentro do celular */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+.app-grid div {
+  background: var(--branco);
+  border-radius: 16px;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: transform 0.25s ease;
+}
+.app-grid div:hover { transform: scale(1.05); }
+.app-grid i { display: block; color: var(--laranja); font-size: 1.4rem; margin-bottom: 8px; }
+
+/* Segurança */
+.seguranca__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.seguranca__item {
+  text-align: center;
+  padding: 36px 24px;
+  border-radius: var(--raio);
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  transition: transform 0.3s ease;
+}
+.seguranca__item:hover { transform: translateY(-6px); }
+.seguranca__item i {
+  font-size: 2.2rem;
+  color: var(--laranja);
+  margin-bottom: 18px;
+}
+.seguranca__item h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.seguranca__item p { color: var(--cinza); font-size: 0.92rem; }
