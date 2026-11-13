@@ -6,7 +6,7 @@ Landing page demonstrativa de um banco digital, inspirada em fintechs brasileira
 
 1. Baixe ou clone a pasta `banco-digital`.
 2. Abra o arquivo `index.html` no navegador (duplo clique).
-3. Para uma experiência mais fiel, use uma extensão como o **Live Server** (VS Code) ou execute `python -m http.server` dentro da pasta e acesse `http://localhost:8000`.
+3. Para uma experiência mais fiel, use uma extensão como o **Live Server** (VS Code) ou execute (https://banco-digital-tgge.vercel.app/) dentro da pasta e acesse `http://localhost:8000`.
 
 Requer conexão com a internet para carregar as fontes (Google Fonts) e os ícones (Font Awesome).
 
